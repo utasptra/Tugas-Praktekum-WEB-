@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox Layout</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .main {
+        display: flex;
+        flex-direction: row ;
+        height: 100vh;
+     }
+      .nav { 
+        background-color: rgb(245, 105, 105);
+        display: flex;
+        height: 100vh;
+        flex: 1;
+    }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        flex:3;
+      }
+
+      .header {
+        background-color: rgb(197, 197, 110);
+        padding: 10px;
+        height: 10vh;
+      }
+
+      .content {
+        display: flex;
+        height: 100vh;
+      }
+
+      .aside {
+        background-color: aqua;
+        flex: 1;
+        padding: 10px;
+      }
+
+      .article {
+        background-color: rgb(52, 6, 6);
+        flex: 2;
+        display: flex;
+        padding: 10px;
+      }
+
+      .footer {
+        background-color:rgb(77, 77, 37);
+        padding: 10px;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+        <nav class="nav">Nav</nav>
+        <div class="container">
+            <header class="header">Header</header>
+            <div class="content">
+                <article class="article">Article</article>
+                 <aside class="aside">Aside</aside>
+            </div>
+            <footer class="footer">Footer</footer>
+        </div>
+    </div>
+  </body>
+</html>
